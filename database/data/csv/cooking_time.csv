@@ -1,0 +1,6 @@
+recipe_time_id,recipe_id,min_prep_time,max_prep_time,min_cook_time,max_cook_time,max_time_to_complete,time_measurement
+1,1,1,30,60,120,150,minutes
+2,2,1,30,10,30,60,minutes
+3,3,1440,1440,60,120,1560,minutes
+4,4,1,30,5,10,40,minutes
+5,5,30,60,30,60,120,minutes

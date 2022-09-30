@@ -1,0 +1,11 @@
+user_id,first_name,last_name,role_id,email,username,password
+1,Maddie,Higgins,1,m.higgins@randatmail.com,maddie.higgins,$2y$15$Ar34EXs6xjpr651ZA8nzPe/rKjn9LKTXN7K7KH3CCfoS1cyWRvf.C
+2,Adrianna,Allen,1,a.allen@randatmail.com,adrianna.allen,$2y$15$T2yyP3ZIATZsuxCo5sywQufRNDhc3BJCEF/BKY35DyfWBpMsdN8Ce
+3,Marcus,Anderson,1,m.anderson@randatmail.com,marcus.anderson,$2y$15$wl5e53ctdllHZwITI5NDHuZdl9AxeL2dCeoU5RWTnXXjSVpO4mf/a
+4,Carlos,Perkins,2,c.perkins@randatmail.com,carlos.perkins,$2y$15$3sRY/8cH26IBSSE.3wSB6uvut/gU8HwN940tUQ9YIJW44.6XbkgXm
+5,Olivia,Brooks,2,o.brooks@randatmail.com,olivia.brooks,$2y$15$ZBfViPlqermPm2tT36VTceCGAh/wQvMVnzfsAXvwWEzfHBdkrenYy
+6,Briony,Gibson,1,b.gibson@randatmail.com,briony.gibson,$2y$15$Dx8gGN9/KNG4ZHcfaFZ1/O2v7SBE4wk0uAtwsgt9wHN3mvy5aYCUu
+7,Sabrina,Brooks,1,s.brooks@randatmail.com,sabrina.brooks,$2y$15$mn6ybTxuQpVGqKvqOMwXP.0DsdY4rwmlt91V2Y888W0XuIwHYc5cC
+8,Martin,Walker,1,m.walker@randatmail.com,martin.walker,$2y$15$JNKw1wSU3D/n2cMUNeJUfOMrSSq9VSTMjUCfXvh3CukJHSE29OFJ6
+9,Lilianna,Smith,2,l.smith@randatmail.com,lilianna.smith,$2y$15$w38GWw8uq4VNC.zYPFc4juenHtoQCPOQBxT8z9.e1fQ9tWW2FWuxm
+10,Adison,Cole,1,a.cole@randatmail.com,adison.cole,$2y$15$Fwz88Z/0TX3j14vyI2CJFekMglhZhM8/mAH7MddvqJtJ5HSRRPCNi
