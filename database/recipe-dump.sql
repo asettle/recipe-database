@@ -91,6 +91,30 @@ INSERT INTO `course` VALUES (1,'breakfast'),(2,'side'),(3,'salad'),(4,'main'),(5
 UNLOCK TABLES;
 
 --
+-- Table structure for table `favourite`
+--
+
+DROP TABLE IF EXISTS `favourite`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `favourite` (
+  `favourite_id` int DEFAULT NULL,
+  `user_id` int DEFAULT NULL,
+  `recipe_id` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `favourite`
+--
+
+LOCK TABLES `favourite` WRITE;
+/*!40000 ALTER TABLE `favourite` DISABLE KEYS */;
+INSERT INTO `favourite` VALUES (1,1,1),(2,2,2),(3,3,3),(4,4,4),(5,5,5),(6,6,1),(7,7,2),(8,8,3),(9,9,4),(10,10,5),(11,1,5),(12,2,4),(13,3,3),(14,4,2),(15,5,1),(16,6,5),(17,7,4),(18,8,3),(19,9,2),(20,10,1);
+/*!40000 ALTER TABLE `favourite` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `ingredients`
 --
 
@@ -148,8 +172,10 @@ DROP TABLE IF EXISTS `rating`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `rating` (
   `rating_id` int DEFAULT NULL,
-  `rating_measurement` text,
-  `rating` bigint DEFAULT NULL
+  `user_id` int DEFAULT NULL,
+  `recipe_id` int DEFAULT NULL,
+  `rating` double DEFAULT NULL,
+  `rating_measurement` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -159,7 +185,7 @@ CREATE TABLE `rating` (
 
 LOCK TABLES `rating` WRITE;
 /*!40000 ALTER TABLE `rating` DISABLE KEYS */;
-INSERT INTO `rating` VALUES (1,'stars',5),(2,'stars',5),(3,'stars',4),(4,'stars',5),(5,'stars',5);
+INSERT INTO `rating` VALUES (1,1,1,5,'stars'),(2,2,2,4.5,'stars'),(3,3,3,4,'stars'),(4,4,4,4.5,'stars'),(5,5,5,4.5,'stars'),(6,6,1,3,'stars'),(7,7,2,2,'stars'),(8,8,3,4.5,'stars'),(9,9,4,4.5,'stars'),(10,10,5,3,'stars'),(11,1,5,4,'stars'),(12,2,4,5,'stars'),(13,3,3,5,'stars'),(14,4,2,1,'stars'),(15,5,1,3,'stars'),(16,6,5,2,'stars'),(17,7,4,2,'stars'),(18,8,3,4.5,'stars'),(19,9,2,3.5,'stars'),(20,10,1,2.5,'stars');
 /*!40000 ALTER TABLE `rating` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -276,4 +302,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-30 16:05:34
+-- Dump completed on 2022-10-08 12:52:46
